@@ -1,7 +1,37 @@
 <html>
 <head>
+  <style>
+  .btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #3e8e41;
+  }
+  </style>
 </head>
 <body>
+<div class="btn-group">
+<button style="width:50%">Pricing Research App</button>
+<button style="width:50%">Pricing Field Agent App</button>
+</div>
 <iframe src="https://app.powerbi.com/view?r=eyJrIjoiN2IwYzA2N2MtMDBjMC00ZGJkLTkxNGMtOTk3YTFiMTZjOTY3IiwidCI6IjhmNzA5NDA0LWFhNjUtNDhiYS04NGI5LWI0MWVhN2E4YzI1NiIsImMiOjJ9" frameborder="0" allowFullScreen="true" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
 </body>
 </html>
